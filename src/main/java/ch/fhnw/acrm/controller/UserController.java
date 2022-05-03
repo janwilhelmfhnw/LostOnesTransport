@@ -20,6 +20,11 @@ public class UserController {
     @Autowired
     private AgentService agentService;
 
+    @GetMapping("/landingPage")
+    public String getLandingPageView() {
+        return "landingPage/landingPage.html";
+    }
+
     @GetMapping("/login")
     public String getLoginView() {
         return "user/login.html";
