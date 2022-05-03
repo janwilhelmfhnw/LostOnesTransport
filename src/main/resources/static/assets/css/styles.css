@@ -4,7 +4,7 @@
 
 .btn-group > .btn {
   float: none;
-  display: inline-block;
+  display: inline;
   margin-right: -2px;
 }
 
