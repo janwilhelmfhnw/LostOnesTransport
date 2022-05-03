@@ -58,9 +58,9 @@ subtitle-link {
 .Rtable-cell {
   box-sizing: border-box;
   flex-grow: 1;
-  width: 100%;  // Default to full width
+  width: 100%;
 padding: 0.8em 1.2em;
-  overflow: hidden; // Or flex might break
+  overflow: hidden;
 list-style: none;
   border: solid @bw white;
   background: #F0F8FF;
