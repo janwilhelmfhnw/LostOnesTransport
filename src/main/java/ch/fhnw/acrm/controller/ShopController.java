@@ -20,7 +20,7 @@ public class ShopController {
     }
 
     @GetMapping("/edit")
-    public String getCustomerEditView(){
+    public String getSettingsView(){
         return "shop/settings";
     }
 }
