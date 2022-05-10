@@ -11,22 +11,19 @@ public class Product {
     public Product() {
     }
     //all constructor
-    public Product(Long id, String name, double price, double palletSize, int amount) {
+    public Product(Long id, String name, double price, double palletSize) {
         this.id = id;
         this.name = name;
         this.price = price;
         this.palletSize = palletSize;
-        this.amount = amount;
     }
     //constructor without id
     public Product(String name,
                    double price,
-                   double palletSize,
-                   int amount) {
+                   double palletSize) {
         this.name = name;
         this.price = price;
         this.palletSize = palletSize;
-        this.amount = amount;
     }
     //getters and setters
     public Long getId() {
@@ -61,14 +58,6 @@ public class Product {
         this.palletSize = palletSize;
     }
 
-    public int getAmount() {
-        return amount;
-    }
-
-    public void setAmount(int amount) {
-        this.amount = amount;
-    }
-
     @Override
     public String toString() {
         return "Product{" +
@@ -76,7 +65,6 @@ public class Product {
                 ", name='" + name + '\'' +
                 ", price=" + price +
                 ", palletSize=" + palletSize +
-                ", amount=" + amount +
                 '}';
     }
 }
