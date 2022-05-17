@@ -15,8 +15,8 @@ public class getDistanceAPI {
 
         private static final String API_KEY = "AIzaSyCsceVMrBAdupkGbu0zM9jOOBrz2s5wEwY";
         private static String destination;
-        //public static float[][] distances;
-        public static final String ORIGIN_ADRESS = "Basel";
+        public static float[][] distances;
+        public static final String ORIGIN_ADDRESS = "Grabenmattweg12,4123Allschwil";
 
         //download data
         public static void getData(String source, String destination) throws Exception {
@@ -43,7 +43,7 @@ public class getDistanceAPI {
 
                 distance = (long) je.get("value");
 
-                System.out.println(distance + " m");
+                System.out.println(response + "\n" + distance + " m");
         }
         public static void setDestination(String des) {
 
@@ -56,9 +56,9 @@ public class getDistanceAPI {
 
         public static void main(String[] args) throws Exception {
 
-                setDestination("StGallen");
+                setDestination("Schanzenstrasse1,4056Basel");
 
-                getData(ORIGIN_ADRESS, getDestination());
+                getData(ORIGIN_ADDRESS, getDestination());
         }
 
 }
