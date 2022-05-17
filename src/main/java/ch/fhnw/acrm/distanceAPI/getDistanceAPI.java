@@ -1,6 +1,5 @@
 package ch.fhnw.acrm.distanceAPI;
 
-
 import java.net.URI;
 import java.net.http.*;
 import org.json.simple.JSONArray;
@@ -9,14 +8,15 @@ import org.json.simple.parser.JSONParser;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.net.http.HttpResponse;
+import java.util.Scanner;
 
-//
 public class getDistanceAPI {
 
         private static final String API_KEY = "AIzaSyCsceVMrBAdupkGbu0zM9jOOBrz2s5wEwY";
         private static String destination;
         public static float[][] distances;
-        public static final String ORIGIN_ADDRESS = "Grabenmattweg12,4123Allschwil";
+        public static final String ORIGIN_ADDRESS = "PeterMerian-Strasse86,4052Basel";
+        private static Scanner scan;
 
         //download data
         public static void getData(String source, String destination) throws Exception {
@@ -45,9 +45,11 @@ public class getDistanceAPI {
 
                 System.out.println(response + "\n" + distance + " m");
         }
-        public static void setDestination(String des) {
+        public static void setDestination() {
 
-                destination = des;
+                scan = new Scanner(System.in);
+                destination = scan.next();
+
         }
         public static String getDestination() {
 
@@ -56,7 +58,7 @@ public class getDistanceAPI {
 
         public static void main(String[] args) throws Exception {
 
-                setDestination("Schanzenstrasse1,4056Basel");
+                setDestination();
 
                 getData(ORIGIN_ADDRESS, getDestination());
         }
