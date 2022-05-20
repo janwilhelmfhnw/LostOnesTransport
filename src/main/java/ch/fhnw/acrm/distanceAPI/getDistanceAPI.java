@@ -55,7 +55,6 @@ public class getDistanceAPI {
 
                 return destination;
         }
-
         public static void main(String[] args) throws Exception {
 
                 setDestination();
