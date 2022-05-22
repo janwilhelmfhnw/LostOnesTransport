@@ -10,7 +10,10 @@ public class Product {
     //empty constructor
     public Product() {
     }
+
+
     //all constructor
+    //this.* used to refer to field object above
     public Product(Long id, String name, double price, double palletSize) {
         this.id = id;
         this.name = name;
