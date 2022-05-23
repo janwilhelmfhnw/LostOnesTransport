@@ -84,7 +84,11 @@ function putProfile(name, email, password, callbackSuccess, callbackError) {
         data: JSON.stringify({
             "name": name,
             "email": email,
-            "password": password
+            "password": password,
+            "street": street,
+            "snumber": snumber,
+            "postal": postal,
+            "city": city,
         }),
         success: function () {
             callbackSuccess(true);

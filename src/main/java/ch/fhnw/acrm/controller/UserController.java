@@ -20,6 +20,11 @@ public class UserController {
     @Autowired
     private AgentService agentService;
 
+    @GetMapping
+    public String getShopView(){
+        return "shop/shop.html";
+    }
+
     @GetMapping("/home")
     public String getHomeView() {
         return "user/home.html";

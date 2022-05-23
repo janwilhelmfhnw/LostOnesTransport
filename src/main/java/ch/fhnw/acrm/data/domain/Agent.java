@@ -34,6 +34,18 @@ public class Agent {
 	@JsonIgnore
 	private List<Customer> customers;
 
+
+	private String street;
+
+
+	private String snumber;
+
+
+	private String postal;
+
+
+	private String city;
+
 	public Long getId() {
 		return id;
 	}
@@ -57,6 +69,39 @@ public class Agent {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+	public String getStreet() {
+		return street;
+	}
+
+	public void setStreet(String street) {
+		this.street = street;
+	}
+
+	public String getSnumber() {
+		return snumber;
+	}
+
+	public void setSnumber(String snumber) {
+		this.snumber = snumber;
+	}
+
+	public String getPostal() {
+		return postal;
+	}
+
+	public void setPostal(String postal) {
+		this.postal = postal;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
 
 	public String getPassword() {
 		String transientPassword = this.password;
