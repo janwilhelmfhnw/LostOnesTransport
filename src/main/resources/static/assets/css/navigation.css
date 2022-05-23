@@ -165,7 +165,7 @@
 
 @media (max-width:767px) {
   .navigation-clean.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    color: #2c3e50;
+    color: #ffffff;
   }
 }
 
@@ -176,7 +176,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #ffffff;
+  background-color: #3c5e38;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -192,7 +192,7 @@
 }
 
 .sidenav a:hover {
-  color: rgb(44, 62, 80);
+  color: rgb(255, 255, 255);
 }
 
 .sidenav .closebtn {
