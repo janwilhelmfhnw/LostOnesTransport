@@ -56,6 +56,7 @@ subtitle-link {
 }
 
 .Rtable-cell {
+  opacity: 0.8;
   box-sizing: border-box;
   flex-grow: 1;
   width: 100%;
