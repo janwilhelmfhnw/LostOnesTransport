@@ -39,7 +39,7 @@ subtitle-link {
   display: inline-block;
   text-align: center;
   font-size: 12px;
-  color: #7FFFD4;
+  color: #2c3e50;
   opacity: 0.9;
   text-decoration: none;
 }
@@ -63,10 +63,11 @@ padding: 0.8em 1.2em;
   overflow: hidden;
 list-style: none;
   border: solid @bw white;
-  background: #F0F8FF;
+  background: #ffffff;}
 
 > h1, > h2, > h3, > h4, > h5, > h6 { margin: 0; }
-}
+
+
 
 .Rtable--2cols > .Rtable-cell  { width: 50%; }
 .Rtable--3cols > .Rtable-cell  { width: 33.33%; }
@@ -75,5 +76,9 @@ list-style: none;
 .Rtable--6cols > .Rtable-cell  { width: 16.6%; }
 
 body {
-  background: #FAEBD7 url("../../user/src/main/resources/static/logo_transparent.png") no-repeat center;
+  background-image: url("../../user/src/main/resources/static/logo_transparent.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
 }
