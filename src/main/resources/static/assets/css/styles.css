@@ -44,9 +44,11 @@ subtitle-link {
   text-decoration: none;
 }
 
-
 @bw: 3px;
 
+.container {
+   background-color: rgba(0,186,170, 0.7);
+}
 
 .Rtable {
   display: flex;
