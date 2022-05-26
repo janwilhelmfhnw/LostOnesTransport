@@ -115,7 +115,7 @@
         $("#form").submit(function (event) {
            putProfile($('input[name=name]').val(), $('input[name=email]').val(), $('input[name=password]').val(),
                $('input[name=street]').val(), $('input[name=snumber]').val(), $('input[name=postal]').val(), $('input[name=city]').val(),function (result) {
-                window.location.replace(".../...");
+                window.location.replace("../");
             }, function (error) {
                 $("#error-modal").modal('show');
                 $("#error-text").text(error);
