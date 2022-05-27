@@ -101,7 +101,13 @@
     }
 
 </script>
-
+<script>
+    validateLogin(function (result) {
+        if (!result) {
+            window.location.replace("../login");
+        }
+    });
+</script>
 <script>
     $(document).ready(function () {
         getProfile(function (result) {
