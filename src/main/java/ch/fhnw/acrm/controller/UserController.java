@@ -52,7 +52,7 @@ public class UserController {
 
     @GetMapping("/profile/edit")
     public String getProfileView() {
-        return "../user/profile.html";
+        return "shop/settings.html";
     }
 
     @GetMapping("/profile")
@@ -60,7 +60,7 @@ public class UserController {
         return agentService.getCurrentAgent();
     }
 
-    @PutMapping("/profile")
+    @PutMapping("shop/settings")
     public ResponseEntity<Void> putProfile(@RequestBody Agent agent) {
         try {
             agent.setId(agentService.getCurrentAgent().getId());
