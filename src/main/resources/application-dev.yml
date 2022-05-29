@@ -1,6 +1,7 @@
 #  spring.datasource.url=jdbc:postgresql://localhost:5432/transporter
 #    spring.datasource.username=postgres
 #    spring.datasource.password=Start123
+
 security:
   token:
     secret: mysecret-which-needs-to-be-of-at-least-512bit-long!please-change
