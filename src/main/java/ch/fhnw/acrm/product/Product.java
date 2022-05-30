@@ -1,7 +1,7 @@
 package ch.fhnw.acrm.product;
 
 // PG
-
+/*
 public class Product {
     private Long id;
     private String name;
@@ -72,3 +72,4 @@ public class Product {
                 '}';
     }
 }
+*/

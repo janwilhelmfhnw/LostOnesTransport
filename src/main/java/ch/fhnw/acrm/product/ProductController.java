@@ -1,7 +1,7 @@
 package ch.fhnw.acrm.product;
 
 import java.util.ArrayList;
-
+/*
 public class ProductController {
 
     public static void main(String[] args) {
@@ -25,3 +25,4 @@ public class ProductController {
 
 
 }
+*/

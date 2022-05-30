@@ -1,7 +1,7 @@
 package ch.fhnw.acrm.product;
 
 import java.util.ArrayList;
-
+/*
 //List to store all the products in the catalogue which has the properties of an array list
 public class ProductList<E> extends ArrayList<E> {
 
@@ -41,3 +41,4 @@ public class ProductList<E> extends ArrayList<E> {
 
 }
 
+*/
