@@ -44,7 +44,7 @@
     </select>
 </form>
 
-    <form id="form" method="post">
+    <form id="form" method="put">
         <p>
             <span lang="de">Name</span>
             <span lang="en">Name</span>
@@ -113,7 +113,7 @@
         getProfile(function (result) {
             $('input[name=name]').val(result["name"]);
             $('input[name=email]').val(result["email"]);
-         //   $('input[name=street]').val(result["street"]);
+            $('input[name=street]').val(result["street"]);
             $('input[name=snumber]').val(result["snumber"]);
             $('input[name=postal]').val(result["postal"]);
             $('input[name=city]').val(result["city"]);
@@ -122,7 +122,7 @@
         $("#form").submit(function (event) {
            putProfile($('input[name=name]').val(), $('input[name=email]').val(), $('input[name=password]').val(),
                $('input[name=street]').val(), $('input[name=snumber]').val(), $('input[name=postal]').val(), $('input[name=city]').val(),function (result) {
-                window.location.replace("/");
+          //      window.location.replace("/");
             }, function (error) {
                 $("#error-modal").modal('show');
                 $("#error-text").text(error);

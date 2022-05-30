@@ -42,9 +42,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http
             .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.NEVER).and()
             .requiresChannel().requestMatchers(r -> r.getHeader("X-Forwarded-Proto") != null).requiresSecure().and() // If the X-Forwarded-Proto header is present, redirect to HTTPS (Heroku)
-            .csrf()
-                .requireCsrfProtectionMatcher(new CSRFRequestMatcher())
-                .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse()).and()
+            .csrf().disable()
+         //       .requireCsrfProtectionMatcher(new CSRFRequestMatcher())
+         //       .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse()).and()
             .authorizeRequests()
                 .antMatchers("/", "/shop/**", "/assets/**", "/settings","/user/**", "/login/**", "/swagger-ui/**", "/v3/api-docs/**", "/swagger-resources/**", "/home/**").permitAll()
                 .antMatchers(HttpMethod.GET, "/logout").permitAll()

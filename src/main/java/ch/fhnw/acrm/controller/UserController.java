@@ -60,7 +60,7 @@ public class UserController {
         return agentService.getCurrentAgent();
     }
 
-    @PutMapping("shop/settings")
+    @PutMapping("/shop/settings")
     public ResponseEntity<Void> putProfile(@RequestBody Agent agent) {
         try {
             agent.setId(agentService.getCurrentAgent().getId());
@@ -68,6 +68,7 @@ public class UserController {
         } catch (Exception e) {
             throw new ResponseStatusException(HttpStatus.NOT_ACCEPTABLE, e.getMessage());
         }
+        System.out.println("test");
         return ResponseEntity.ok().build();
     }
 

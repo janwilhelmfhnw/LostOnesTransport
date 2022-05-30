@@ -73,14 +73,14 @@ function getProfile(callback) {
     });
 }
 
-function putProfile(name, email, password, callbackSuccess, callbackError) {
+function putProfile(name, email, password,street, snumber, postal, city, callbackSuccess, callbackError) {
     $.ajax({
         type: "PUT",
         contentType: "application/json",
         headers: {
             "X-XSRF-TOKEN": getCookie("XSRF-TOKEN")
         },
-        url: serviceEndpointURL + "/profile",
+        url: serviceEndpointURL + "/shop/settings",
         data: JSON.stringify({
             "name": name,
             "email": email,
