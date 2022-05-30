@@ -1,5 +1,6 @@
 package ch.fhnw.acrm.distanceAPI;
 
+/*
 import java.net.URI;
 import java.net.http.*;
 import org.json.simple.JSONArray;
@@ -63,3 +64,4 @@ public class getDistanceAPI {
         }
 
 }
+*/
